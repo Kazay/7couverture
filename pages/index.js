@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import ComingSoon from '../components/ComingSoon';
 
 export default function Home() {
   return (
@@ -6,13 +7,12 @@ export default function Home() {
       <Head>
         <title>La 7ème de couverture</title>
       </Head>
-      <section className="lg:container mx-auto">
-        <div className="flex mb-4">
-          <div className="w-full">
-            <h1 className="">Bienvenue les kidz</h1>
-          </div>
-        </div>
-      </section>
+      <main
+        className="h-screen w-screen flex bg-center"
+        style={{ backgroundImage: 'url("/images/bg-md.jpg")' }}
+      >
+        <ComingSoon />
+      </main>
     </>
   );
 }
